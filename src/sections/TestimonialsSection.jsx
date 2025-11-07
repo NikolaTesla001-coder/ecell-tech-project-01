@@ -4,7 +4,7 @@ import { MessageSquareQuote } from "lucide-react";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "William Henry",
+      name: "UB Printers Team",
       role: "Customer, Agent",
       image:
         "https://images.unsplash.com/photo-1603415526960-f7e0328a2a99?auto=format&fit=crop&w=600&q=80",
