@@ -5,32 +5,32 @@ const PartnerSatisfaction = () => {
   const items = [
     {
       id: 1,
-      icon: <Rocket size={48} className="text-cyan-400" />,
+      icon: <Rocket size={48} className="text-[#03D4D7]" />,
       title: "Digital Promotion",
       subtitle: "Boosters",
-      color: "text-pink-500",
+      color: "text-[#F36F21]",
     },
     {
       id: 2,
-      icon: <FileSignature size={48} className="text-cyan-400" />,
+      icon: <FileSignature size={48} className="text-[#03D4D7]" />,
       title: "NDA",
-      subtitle: "Producted Apps",
-      color: "text-pink-500",
+      subtitle: "Protected Apps",
+      color: "text-[#F36F21]",
     },
     {
       id: 3,
-      icon: <Wallet size={48} className="text-cyan-400" />,
+      icon: <Wallet size={48} className="text-[#03D4D7]" />,
       title: "100% Money-Back",
       subtitle: "Guarantee",
-      color: "text-pink-500",
+      color: "text-[#F36F21]",
     },
   ];
 
   return (
-    <section className="bg-[#020014] text-white py-24 px-6 md:px-16">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="relative bg-gradient-to-b from-[#0A0013] to-[#1A0A2E] text-white py-24 px-6 md:px-16 overflow-hidden">
+      <div className="max-w-6xl mx-auto text-center relative z-10">
         {/* Section Header */}
-        <p className="text-cyan-400 font-semibold uppercase tracking-widest">
+        <p className="text-[#03D4D7] font-semibold uppercase tracking-widest">
           We Empower Your Digital Brand
         </p>
 
@@ -38,16 +38,18 @@ const PartnerSatisfaction = () => {
           Our Way of Ensuring Complete Satisfaction <br /> for Our Partners
         </h2>
 
-        <div className="w-20 h-[3px] bg-cyan-400 mx-auto rounded-full mb-12"></div>
+        <div className="w-20 h-[3px] bg-[#F36F21] mx-auto rounded-full mb-12"></div>
 
         {/* Items Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 mt-10">
           {items.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col items-center text-center space-y-4 hover:scale-105 transition-transform duration-300"
+              className="flex flex-col items-center text-center space-y-4 p-8 rounded-2xl bg-[#0A0013]/60 border border-transparent hover:border-[#03D4D7]/50 hover:scale-[1.03] transition-all duration-300 backdrop-blur-sm"
             >
-              {item.icon}
+              <div className="p-4 bg-[#1A0A2E]/60 rounded-full border border-[#03D4D7]/30">
+                {item.icon}
+              </div>
               <h3 className={`${item.color} font-bold text-lg`}>
                 {item.title}
               </h3>
@@ -56,6 +58,10 @@ const PartnerSatisfaction = () => {
           ))}
         </div>
       </div>
+
+      {/* soft background glows */}
+      <div className="absolute w-[600px] h-[600px] bg-[#2D2A9E] opacity-20 blur-[150px] -top-40 left-0"></div>
+      <div className="absolute w-[500px] h-[500px] bg-[#03D4D7] opacity-20 blur-[120px] bottom-0 right-0"></div>
     </section>
   );
 };

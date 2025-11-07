@@ -4,9 +4,6 @@ import NavBar from './components/Navbar'
 import WhySection from './sections/WhySection'
 import PartnerSatisfaction from './sections/PartnerSatisfaction'
 import ServicesSection from './sections/ServiceSection'
-import IndustriesSection from './sections/IndustriesSection'
-import CallToActionSection from './sections/CallToAction'
-import SubscribeSection from './sections/SubscribeSection'
 import TestimonialsSection from './sections/TestimonialsSection'
 import ContactUs from './sections/ContactUs'
 
@@ -15,12 +12,12 @@ const App = () => {
   return (
     <div>
       <NavBar />
-      <Home />
-      <WhySection />
-      <PartnerSatisfaction />
-      <ServicesSection />
-      <TestimonialsSection />
-      <ContactUs />
+      <section id="home"><Home /></section>
+      <section id="why"><WhySection /></section>
+      <section id="partners"><PartnerSatisfaction /></section>
+      <section id="services"><ServicesSection /></section>
+      <section id="testimonials"><TestimonialsSection /></section>
+      <section id="contact"><ContactUs /></section>
     </div>
   )
 }
