@@ -13,113 +13,110 @@ import {
 const ServicesSection = () => {
   const services = [
     {
-      icon: <Smartphone size={36} className="text-cyan-400" />,
+      icon: <Smartphone size={36} className="text-[#03D4D7]" />,
       title: "Mobile App Development",
       description:
-        "Powered by your imagination and chain of ideas, we shape the outcome with our team of mobile app developers.",
+        "Powered by your imagination and chain of ideas, we shape the outcome with our expert team of mobile app developers.",
     },
     {
-      icon: <Monitor size={36} className="text-cyan-400" />,
+      icon: <Monitor size={36} className="text-[#03D4D7]" />,
       title: "Website Development",
       description:
-        "We are a top-rated Web Application Development Company. Kickstart your customized and engaging web app with our services.",
+        "We build high-performance web apps with tailored UI/UX and robust backend systems that scale effortlessly.",
       highlight: true,
     },
     {
-      icon: <PenTool size={36} className="text-cyan-400" />,
+      icon: <PenTool size={36} className="text-[#03D4D7]" />,
       title: "Graphic Designing",
       description:
-        "We are widely known as a leading graphic design company with a team of mobile app developers who deliver robust apps.",
+        "Our creative design team crafts stunning visual identities, ensuring brand consistency across platforms.",
     },
     {
-      icon: <Globe size={36} className="text-cyan-400" />,
+      icon: <Globe size={36} className="text-[#03D4D7]" />,
       title: "Social Marketing",
       description:
-        "Leading social media marketing service provider that can drive your social media channels like Facebook, Twitter, LinkedIn, and Instagram.",
+        "Drive engagement and growth across all major social media platforms with data-backed marketing strategies.",
     },
     {
-      icon: <Leaf size={36} className="text-cyan-400" />,
-      title: "SEO/Content Writing",
+      icon: <Leaf size={36} className="text-[#03D4D7]" />,
+      title: "SEO / Content Writing",
       description:
-        "We provide optimized solutions that can improve organic search ranking and better engagement with faster maximum conversions.",
+        "Our SEO experts and content strategists deliver optimized campaigns that increase organic visibility and conversions.",
     },
     {
-      icon: <Gamepad2 size={36} className="text-cyan-400" />,
+      icon: <Gamepad2 size={36} className="text-[#03D4D7]" />,
       title: "Game App Development",
       description:
-        "Create, launch, and operate your app with us — the leader in mobile game development companies in India, USA, and UAE.",
+        "Design, develop, and launch immersive gaming experiences for both Android and iOS platforms.",
     },
     {
-      icon: <Leaf size={36} className="text-cyan-400" />,
+      icon: <Leaf size={36} className="text-[#03D4D7]" />,
       title: "Android App Development",
       description:
-        "Android is the market leader of the OS domain, and we dominate skillfully in it with the latest tools and tech.",
+        "Leverage Android’s full potential with our scalable, modern, and secure mobile app development expertise.",
     },
     {
-      icon: <Target size={36} className="text-cyan-400" />,
-      title: "Cross-platform Mobile App",
+      icon: <Target size={36} className="text-[#03D4D7]" />,
+      title: "Cross-platform Apps",
       description:
-        "Cross-platform app development for both Android and iOS is our forte, complemented with frameworks like React Native and Xamarin.",
+        "We develop seamless, high-performance apps that work flawlessly across Android and iOS ecosystems.",
     },
     {
-      icon: <Phone size={36} className="text-cyan-400" />,
+      icon: <Phone size={36} className="text-[#03D4D7]" />,
       title: "iPhone App Development",
       description:
-        "We know what it takes to develop flawless iPhone apps — crafted for over 100+ clients across the globe.",
+        "Build top-tier iOS applications with superior design, speed, and integration for premium user experiences.",
     },
   ];
 
   return (
-    <section className="bg-[#020014] text-white py-24 px-6 md:px-16">
+    <section className="relative bg-gradient-to-b from-[#0A0013] to-[#1A0A2E] text-white py-24 px-6 md:px-16 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-6 mb-14">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-6 mb-16">
           <div>
-            <p className="text-cyan-400 font-semibold uppercase tracking-wider">
+            <p className="text-[#03D4D7] font-semibold uppercase tracking-wider">
               Latest and Greatest Services
             </p>
             <h2 className="text-3xl md:text-5xl font-extrabold mt-3">
               Empowering Solutions for <br /> Emerging Needs
             </h2>
-            <div className="w-20 h-[3px] bg-cyan-400 rounded-full mt-4"></div>
+            <div className="w-20 h-[3px] bg-[#F36F21] rounded-full mt-4"></div>
           </div>
 
-          <p className="text-gray-300 md:max-w-md leading-relaxed">
-            NexNora is a global web & mobile app development company located in
-            India, USA, Singapore, and UAE. We are one of the world’s leading
-            mobility firms, where innovative thinking, inspiring minds, and
-            passion blend to forge extraordinary impact.
+          <p className="text-gray-400 md:max-w-md leading-relaxed">
+            NexNora is a global web & mobile app development company operating in India, USA, Singapore, and UAE. We blend innovation, design, and technology to build scalable, world-class digital solutions.
           </p>
         </div>
 
-        {/* Grid */}
+        {/* Services Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, idx) => (
             <div
               key={idx}
-              className={`p-8 rounded-2xl border transition-all duration-300 hover:scale-[1.02] ${
+              className={`group p-8 rounded-2xl bg-[#0A0013]/60 border transition-all duration-300 backdrop-blur-sm hover:scale-[1.03] ${
                 service.highlight
-                  ? "border-cyan-400/80 shadow-lg shadow-cyan-900/40"
-                  : "border-cyan-800/30 hover:border-cyan-400/70"
+                  ? "border-[#F36F21]/80 shadow-md shadow-[#F36F21]/20"
+                  : "border-[#2D2A9E]/30 hover:border-[#03D4D7]/60"
               }`}
             >
               <div className="flex items-center gap-4 mb-4">
                 {service.icon}
-                <h3 className="font-semibold text-lg">{service.title}</h3>
+                <h3 className="font-semibold text-lg text-[#03D4D7] group-hover:text-[#F36F21] transition-colors duration-300">
+                  {service.title}
+                </h3>
               </div>
-              <p className="text-gray-300 text-sm leading-relaxed">
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">
                 {service.description}
               </p>
-              <button className="text-cyan-400 text-sm font-semibold mt-4 flex items-center gap-1 group">
-                Learn More
-                <span className="group-hover:translate-x-1 transition-transform">
-                  ➜
-                </span>
-              </button>
             </div>
           ))}
         </div>
       </div>
+
+      {/* soft ambient glows */}
+      <div className="absolute w-[700px] h-[700px] bg-[#2D2A9E] opacity-20 blur-[150px] -top-40 left-0"></div>
+      <div className="absolute w-[500px] h-[500px] bg-[#03D4D7] opacity-15 blur-[120px] bottom-0 right-0"></div>
     </section>
   );
 };
