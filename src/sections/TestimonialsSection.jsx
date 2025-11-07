@@ -4,11 +4,11 @@ import { MessageSquareQuote } from "lucide-react";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "William Henry",
-      role: "CUSTOMERS, AGENT",
+      name: "UB Printers Team",
+      role: "AGENT",
       image:
         "https://images.unsplash.com/photo-1603415526960-f7e0328a2a99?auto=format&fit=crop&w=600&q=80",
-      text: "Metus hymenaeos neque aperiam! Etiam excepteur convallis iste, purus, accusantium ab parturient dapibus at integer lectus rhoncus beatae litor.",
+      text: "Yuvi Collab transformed our online presence. Their creativity and attention to detail helped us attract more customers and showcase our work beautifully",
     },
     {
       name: "Jenny Watson",
